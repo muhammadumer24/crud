@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/task.css">
+    <script src="https://kit.fontawesome.com/904c91e618.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" defer></script>
+      <script src="../js/task.js" defer></script>
+    <title>Task</title>
+</head>
+<body>
+    <header><a href="/"><h1>CRUD</h1></a></header>
+    <form>
+        <div class="result">
+            <p class="plain">id:</p>
+            <p class="back">8764895234234</p>
+        </div>
+        <div class="result">
+            <p class="plain">Name</p>
+            <input type="text" value="name">
+        </div>
+        <div class="result">
+            <p class="plain">Description</p>
+            <textarea name="desc" placeholder="No Description"></textarea>
+        </div>
+        <span class="show">
+            <i class="fa-sharp fa-solid fa-circle-exclamation fa-shake"></i>
+            <p>This field is required</p>
+        </span>
+        <div class="result">
+            <p class="plain">Completed:</p>
+            <input type="checkbox" name="completed" id="check">
+        </div>
+        <button type="submit">Edit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@font-face {
+    font-family: traditional;
+    src: url("../fonts/Arimo-VariableFont_wght.ttf");
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    font-size: 18px;
+    --secondaryColor:#DF3F20;
+    --primaryColor:#20C0DF;
+    --primaryTxt:traditional;
+}
+header{
+    padding: 1em;
+    background-color: var(--primaryColor);
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 900;
+    font-family: var(--primaryTxt);
+}
+form{
+    display: grid;
+    justify-content: center;
+    margin-block-start:4em ;
+    background-color: var(--primaryColor);
+    margin-inline: auto;
+    width: 50%;
+    border-radius: 25px;
+    padding: 1em;
+    box-shadow: 0px 0px 23px -6px var(--secondaryColor);
+    grid-template-columns: repeat(1,4fr);
+    font-family: var(--primaryTxt);
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input,button,textarea{
+    padding:1em;
+    margin-block:1em;
+    border-radius: 13px;
+    border:0;
+    font-family:var(--primaryTxt);
+    transition: transform ease-in-out 300ms;
+    font-size: .8rem;
+}
+input:focus,button:focus,textarea:focus{
+    outline: 3px solid whitesmoke;
+    outline-offset: 5px;
+}
+input:hover,button:hover,textarea:hover,.task:hover{
+    transform: scale(1.05);
+}
+input{
+    width: 80%;
+}
+textarea{
+    width: 80%;
+    height: 10rem;
+    resize: none;
+}
+button{
+    padding-inline: 5em;
+    cursor: pointer;
+}
+.back{
+    background-color: rgba(128, 128, 128, 0.48);
+    padding:.5em;
+    width:80%;
+    text-align: center;
+    border-radius: 50px;
+}
+.plain{
+    margin-inline: .5em;
+}
+.show{
+    font-size: .75rem;
+    margin: 0;
+    margin-inline-start: 5%;
+    justify-self: baseline;
+    padding: 0;
+    display: none;
+}
+i{
+    margin-inline-end:10px;
+}
+.fa-trash-can-xmark::before{
+    content: '\f1f8';
+}
+h1{
+    transition: all ease-in-out .3s;
+}
+h1:hover{
+    transform: scale(1.2);
+}
